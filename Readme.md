@@ -49,21 +49,21 @@ Once the API is running, you can use tools like curl, Postman, or any programmin
 
 For example, using curl, you can make a request to the API endpoint to get hashtag tweets sentiment analysis:
 
-bash
+```bash
 
 curl -X 'GET' \
   'http://localhost:8000/get_hashtag_tweets/?hashtag=AI' \
   -H 'accept: application/json'
-
+```
 And the API will respond with the sentiment analysis results for the hashtag tweets.
 
 Similarly, you can make a request to the API endpoint to get tweet replies sentiment analysis:
-
-bash
+```bash
 
 curl -X 'GET' \
   'http://localhost:8000/tweet_replies/?tweet_url=https://twitter.com/username/status/1234567890' \
   -H 'accept: application/json'
+```
 
 Remember to replace http://localhost:8000 with the actual URL where your API is hosted.
 
